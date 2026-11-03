@@ -2,6 +2,10 @@
 
 English | [简体中文](README.zh-CN.md)
 
+**[Play live](https://derekllr.github.io/pocket-groove/)** · [Report a bug](https://github.com/Derekllr/pocket-groove/issues)
+
+![Pocket Groove preview](preview.png)
+
 A tiny, offline-ready drum machine and practice companion. Build a groove on a 6-track / 16-step sequencer, play synthesized drums, and export a four-bar WAV. Switch between English and Chinese without losing your groove. No accounts, samples, or dependencies required.
 
 ## Try it
@@ -70,3 +74,4 @@ Bug reports, ideas and pull requests are welcome. Include your browser version a
 ## License
 
 MIT. All drum sounds are synthesized in code; no external audio samples or fonts are bundled.
+

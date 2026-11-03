@@ -2,6 +2,8 @@
 
 [English](README.md) | 简体中文
 
+**[在线试玩](https://derekllr.github.io/pocket-groove/)** · [反馈问题](https://github.com/Derekllr/pocket-groove/issues)
+
 一个轻量的浏览器鼓机与节奏练习工具。点亮格子编节奏，用键盘打鼓，导出自己的声音。支持中英文切换，全部鼓声实时合成，无需注册、安装依赖或下载音频素材。
 
 ## 开始玩
@@ -46,3 +48,4 @@ npm start
 本项目初版使用 AI 辅助开发。后续可逐步增加自己的功能、记录测试结果与设计取舍，并如实描述个人贡献。
 
 MIT License。鼓声全部由代码合成，没有捆绑外部音频采样。
+
