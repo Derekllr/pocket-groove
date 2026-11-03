@@ -61,9 +61,7 @@ Automated checks cover preset roundtrips, timing invariants, solo/mute, rejected
 
 This first version is a one-bar pattern repeated during playback, not a full song arranger. It does not import sheet-music PDFs, transcribe songs, record microphone input, or score live drumming. The grid is an editable rhythm representation rather than standard staff notation.
 
-## Make it your project
-
-This initial version was created with AI assistance. To develop it into a personal portfolio project, understand the timing and synthesis code, add your own feature, test it, and document your contribution honestly. Good next steps: a multi-bar arranger; drum-staff view; MIDI export; a practice-session log; velocity-sensitive input. Do not claim user counts, performance improvements, or exclusive authorship without evidence.
+## Hosting
 
 To host with GitHub Pages, choose Deploy from a branch, main, / (root). The build also emits `index.html` at the repository root for this purpose. This package contains no GitHub credentials. Sites hosting configuration is separate from the application and is not required for GitHub Pages.
 
