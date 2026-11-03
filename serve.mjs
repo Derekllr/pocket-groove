@@ -1,0 +1,2 @@
+import http from 'node:http';import {readFileSync} from 'node:fs';
+http.createServer((req,res)=>{try{if(!['/','/index.html'].includes(req.url.split('?')[0])){res.writeHead(404);return res.end('Not found');}res.setHeader('Content-Type','text/html; charset=utf-8');res.end(readFileSync('dist/index.html'));}catch{res.writeHead(500);res.end('Run npm run build first');}}).listen(4173,'127.0.0.1',()=>console.log('Local: http://127.0.0.1:4173'));

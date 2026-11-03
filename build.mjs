@@ -1,0 +1,3 @@
+import {readFileSync,writeFileSync,mkdirSync} from 'node:fs';
+let html=readFileSync('src/index.html','utf8');const css=readFileSync('src/style.css','utf8');const js=['model','engine','i18n','app'].map(f=>readFileSync(`src/${f}.mjs`,'utf8').replace(/^import .*;\s*$/gm,'').replace(/^export /gm,'')).join('\n');
+html=html.replace('<!-- STYLE -->',()=>`<style>${css}</style>`).replace('<!-- SCRIPT -->',()=>`<script type="module">${js}</script>`);mkdirSync('dist',{recursive:true});writeFileSync('dist/index.html',html);writeFileSync('index.html',html);console.log('Built offline-ready dist/index.html and GitHub Pages index.html');
