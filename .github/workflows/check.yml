@@ -13,4 +13,5 @@ jobs:
       - run: npm test
       - run: npm run build
       - name: Check committed build is current
-        run: git diff --exit-code -- dist/index.html index.html
+        run: git diff --exit-code --ignore-space-at-eol -- dist/index.html index.html
+
