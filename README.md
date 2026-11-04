@@ -10,12 +10,12 @@ A tiny, offline-ready drum machine and practice companion. Build a groove on a 6
 
 ## Try it
 
-Open **dist/index.html** in a recent Chrome or Edge browser and click 开始播放. The built page contains all CSS and JavaScript and works without a server. Browser storage on local files may vary; export JSON to keep a reliable backup.
+Open **dist/index.html** in a recent Chrome or Edge browser and click Play. The built page contains all CSS and JavaScript and works without a server. Browser storage on local files may vary; export JSON to keep a reliable backup.
 
 ## Features
 
 - Six synthesized voices: kick, snare, closed/open hi-hat, low tom, clap; closed hat chokes open hat.
-- 16 sixteenth-note steps in 4/4, normal and ghost-note velocities.
+- 16 sixteenth-note steps in 4/4, normal and ghost-note velocities. Toggle Ghost notes or hold Shift to enter quieter hits.
 - Tempo 40–220 BPM, swing 0–50%, tap tempo, optional metronome.
 - Per-track mute, multi-track solo, and gain; master gain and compressor.
 - Four editable starting patterns; randomized hi-hat/fill variation; 40-step arrangement undo.
@@ -24,6 +24,12 @@ Open **dist/index.html** in a recent Chrome or Edge browser and click 开始播�
 - Validated JSON import/export, browser-local autosave, offline rendering to PCM16 mono WAV.
 - Responsive layout, accessible control labels, reduced-motion support.
 - English / Chinese language switch with persisted preference, including help, notifications and dynamic accessible labels. Custom pattern names remain untouched.
+
+## Interface
+
+Version 2 puts the sequencer first: a compact transport, six aligned instrument rows, editable patterns and practice controls in the sidebar. Track names audition sounds; pads are separate from the arrangement. On small screens, only the grid scrolls horizontally.
+
+Layout references: [iO-808](https://github.com/vincentriemer/io-808), [drumbit](https://drumbit.app/) and [orDrumbox](https://github.com/cadeli/ordrumbox-v2). The interface is implemented with this project's own HTML, CSS and SVG; no assets or source from those projects are bundled.
 
 ## Develop
 
