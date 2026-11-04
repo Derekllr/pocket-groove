@@ -1,12 +1,21 @@
 // Plain data + a pure translator, shared by the UI and coverage tests.
 export const COPY = {
+  '步进鼓机':'STEP SEQUENCER','工程操作':'Project controls','操作说明':'Controls',
+  '节奏库':'PATTERNS','选择预设后可编辑':'Choose a pattern to edit.','练习':'PRACTICE',
+  '每 4 次循环加速。将鼓轨静音后，可跟随其余声部练习。':'Increase tempo every 4 loops. Mute a track to play along.',
+  '当前节奏':'CURRENT PATTERN','步进编辑器':'Step sequencer','主音量':'Master',
+  '鼓组':'VOICE','轻击模式':'Ghost notes','打击垫':'Drum pads',
+  '点击或使用键盘 A–H 试音':'Click a pad or use A S D F G H.',
+  '打击垫不写入编曲':'Pads do not record to the grid.',
+  '变奏':'Variation','镲片 / 加花':'Hats / fills','播放 / 停止':'Play / stop','轻击':'Ghost hit',
+  '也可以开启“轻击模式”后直接点击格子。点击鼓组名称可以试音；打击垫不会自动录入编曲。':'Enable Ghost notes to enter soft hits without holding Shift. Click a voice name to audition it. Pads do not record to the grid.',
   '/ 口袋鼓房':'/ DRUM STUDIO',
   '本地创作 · 自动保存':'LOCAL FIRST · AUTOSAVED',
   '把脑海里的节奏，':'That beat in your head.', '敲出来。':'Make it yours.',
   '点亮格子，找到你的 groove。今晚的第一首，从这一拍开始。':'Light up the steps. Find your groove. Your next track starts here.',
   '节奏工作台':'Drum sequencer','节奏名称':'Pattern name','已就绪':'Ready',
   '↶ 撤销':'↶ Undo','撤销上次编曲修改':'Undo the last arrangement edit','清空':'Clear',
-  '开始播放':'Play groove','停止播放':'Stop','播放节奏':'Play groove',
+  '开始播放':'Play','停止播放':'Stop','播放节奏':'Play pattern',
   '速度':'Tempo','速度 BPM':'Tempo BPM','Tap 定速':'Tap tempo','摇摆':'Swing','节拍器':'Metronome','音量':'Volume',
   'DRUM / 鼓组':'DRUM / VOICE','等待第一拍':'Ready on the one',
   '点击 开 / 关':'Click to toggle','Shift + 点击 轻击':'Shift + click for ghost notes','空格 播放':'Space to play',
@@ -22,7 +31,7 @@ export const COPY = {
   '打击垫用于即兴，不写入格子。':'Jam freely. Pads do not record to the grid.',
   '这个节奏，值得留下。':'A groove worth keeping.',
   '保存可编辑工程，或导出 4 小节 WAV，带走你的声音。':'Save your editable project, or take home a four-bar WAV.',
-  '导入工程':'Import project','保存工程 ↓':'Save project ↓','导出音频 ↗':'Export audio ↗','正在渲染…':'Rendering…',
+  '导入工程':'Import','保存工程 ↓':'Save ↓','导出音频 ↗':'Export WAV ↗','正在渲染…':'Rendering…',
   '怎么玩？':'How to play','关闭 ×':'Close ×','不用懂乐理，也能开始。':'No theory needed. Just start.',
   '从一个预设开始，点亮或熄灭格子。一行是一种鼓，一列是一个十六分音符。四组格子对应四拍。':'Start with a preset and toggle a few steps. Each row is a drum; each column is a sixteenth note. Four groups make four beats.',
   '普通点击切换重击与关闭；Shift + 点击切换轻击。轨道 M 是静音，S 是独奏，可同时独奏多个声部。音轨旁的滑杆控制该声部音量。':'Click to toggle a full hit. Shift + click toggles a ghost note. M mutes a track; S solos it. Multiple solos are allowed. Each track has its own volume slider.',
@@ -86,3 +95,4 @@ export function translate(text,locale='en') {
   }
   return out===undefined?raw:raw.replace(s,out);
 }
+
